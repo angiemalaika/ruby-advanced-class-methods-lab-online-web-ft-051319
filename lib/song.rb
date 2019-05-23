@@ -40,7 +40,7 @@ class Song
   def self.new_from_filename(filename)
     filename.slice!('.mp3')
     file = filename.split(' - ')
-    Song.new(file[1], file[0])
+    Song.new(file[1])
   end
   
   def self.create_from_filename(filename)
